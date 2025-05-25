@@ -33,8 +33,6 @@ def change_direction(k, grid, row_head, col_head):
     elif k == pygame.K_s and direction != "up":
         head["direction"] = "down"
 
-# Call this first time passing in tail coords
-
 def find_next_seg(grid, r, c, value):
     if c + 1 < len(grid[0]) and grid[r][c + 1]["value"] == value + 1:
         return r, c + 1
